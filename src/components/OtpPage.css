@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 1440px;
+    height: 1024px;
+    overflow: hidden; 
+  }
+  
+  .container {
+    display: flex;
+    width: 100vw;  /* ใช้ 100% ของ viewport width */
+    height: 100vh; /* ใช้ 100% ของ viewport height */
+  }
+  
+  .left-tab, 
+  .right-tab {
+    width: 35px;
+    height: 1024px; 
+    background-color: #B2BB1E;
+    position: absolute;
+    top: 0;
+  }
+  
+  .left-tab {
+    left: 0;
+  }
+  
+  .right-tab {
+    right: 0;
+  }
+  
+  .content {
+    flex-grow: 1; 
+    display: flex;
+    align-items: top;
+    background-color: #ffffff;
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .ku-logo {
+    background-image: url('src/assets/KU_logo.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 109px; 
+    height: 126px;
+    margin-top: 8px;
+  }
+  
+  .bottom-tab {
+    position: absolute;
+    margin-top: 143px;
+    left: 0px; 
+    right: 0px; 
+    height: 28px; 
+    background-color: #006664;
+    z-index: 10;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    margin-top: 60px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.09px;
+    color: #035818;
+}
+
+.otp {
+  position: absolute;
+  background-color: #006664;
+  display: flex;
+  flex-direction: column;  
+  width: 1204px;
+  height: 613px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 30px;
+}
+
+.titleOtp {
+  font-family: 'Inter', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 77.45px;
+  color: #B2BB1E;
+  text-align: center; 
+  margin-top: 100px;
+}
+
+.otp-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* ระยะห่างระหว่างช่อง */
+  margin-top: 45px;
+}
+
+.otp-input input {
+  text-align: center;
+  border: none;
+  margin: 0 10px;
+  border-bottom: 3px solid #B2BB1E;
+  width: 81px;
+  height: 84px;
+  font-size: 36px;
+  color:  white;
+  outline: none;
+  background: transparent;
+  caret-color: white
+}
+
+.otp-input input:focus {
+  outline: none;
+  color: #B2BB1E; /* เปลี่ยนสีเมื่อ input โฟกัส */
+}
+
+.next-otp-button {
+  background-color: #ffffff; 
+  color: black; 
+  font-family: 'Sarabun', sans-serif;
+  font-size: 36px;
+  border-color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center; 
+  width: 616px;
+  height: 78px;
+  margin-top: 25px; 
+  margin-left: 294px;
+}
+
+
+
+
+
+
+
