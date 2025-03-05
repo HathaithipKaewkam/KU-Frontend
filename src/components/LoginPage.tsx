@@ -11,7 +11,6 @@ function LoginPage() {
   return (
     <div className='container'>
       <div className="left-tab"></div>
-
       <div className='content'>
       <div className="ku-logo"></div>
       <div className="bottom-tab"></div>

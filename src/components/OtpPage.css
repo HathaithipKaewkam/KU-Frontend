@@ -5,21 +5,21 @@
   }
   
   body {
-    width: 1440px;
-    height: 1024px;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden; 
   }
   
   .container {
     display: flex;
-    width: 100vw;  /* ใช้ 100% ของ viewport width */
-    height: 100vh; /* ใช้ 100% ของ viewport height */
+    flex-grow: 1;
+    min-height: 100vh;
   }
   
   .left-tab, 
   .right-tab {
     width: 35px;
-    height: 1024px; 
+    height: 100vh;
     background-color: #B2BB1E;
     position: absolute;
     top: 0;
@@ -36,10 +36,10 @@
   .content {
     flex-grow: 1; 
     display: flex;
-    align-items: top;
-    background-color: #ffffff;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff;
   }
   
   .ku-logo {
@@ -49,21 +49,19 @@
     width: 109px; 
     height: 126px;
     margin-top: 8px;
+    margin-bottom: 20px; /* เพิ่มระยะห่างจาก Bottom Tab */
   }
   
   .bottom-tab {
-    position: absolute;
-    margin-top: 143px;
-    left: 0px; 
-    right: 0px; 
-    height: 28px; 
+    width: 100%;
+    height: 28px;
     background-color: #006664;
-    z-index: 10;
-}
+    margin-top: 20px; 
+  }
 
 .title {
     font-family: 'Inter', sans-serif;
-    margin-top: 60px;
+    margin-top: 20px; /* Adjust margin to move the title upwards */
     font-size: 48px;
     font-weight: 400;
     line-height: 58.09px;
@@ -72,15 +70,15 @@
 
 .otp {
   position: absolute;
-  background-color: #006664;
-  display: flex;
-  flex-direction: column;  
   width: 1204px;
   height: 613px;
-  top: 60%;
+  top: 294px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  padding-top: 30px;
+  transform: translateX(-50%); 
+  background-color: #006664;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
 }
 
 .titleOtp {
@@ -128,10 +126,10 @@
   padding: 10px 20px;
   cursor: pointer;
   text-align: center; 
-  width: 616px;
+  width: 630px;
   height: 78px;
   margin-top: 25px; 
-  margin-left: 294px;
+  margin-left: 260px;
 }
 
 
